@@ -1,0 +1,125 @@
+:root {
+    --ink: #8f8275;
+    --line: #c1b7ab;
+    --line-soft: #e7e1db;
+    --label: #b7a99b;
+    --btn: #80756b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    color: var(--ink);
+    background: #ffffff;
+}
+
+.header {
+    border-bottom: 1px solid #ece7e3;
+}
+
+.header__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 22px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 42px;
+    letter-spacing: 0.02em;
+}
+
+.main {
+    padding: 44px 24px 60px;
+}
+
+.confirm {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.confirm__title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 18px 0 40px;
+}
+
+.confirm__table {
+    display: flex;
+    justify-content: center;
+}
+
+.confirm-table__inner {
+    width: 730px;
+    border: 1px solid var(--line);
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.confirm-table__row {
+    border-bottom: 1px solid var(--line-soft);
+}
+
+.confirm-table__head {
+    width: 228px;
+    background: var(--label);
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 18px;
+    border-right: 1px solid var(--line);
+}
+
+.confirm-table__data {
+    width: calc(100% - 228px);
+    padding: 18px 28px;
+    border-bottom: 1px solid var(--line-soft);
+}
+
+.confirm-table__row:last-child .confirm-table__data {
+    border-bottom: none;
+}
+
+.confirm__actions {
+    width: 730px;
+    margin: 26px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+}
+
+.confirm__submit {
+    width: 140px;
+    height: 42px;
+    border: none;
+    background: var(--btn);
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
+
+.confirm__submit:hover {
+    filter: brightness(0.97);
+}
+
+.confirm__back {
+    border: none;
+    background: transparent;
+    color: var(--ink);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+}
+
+.confirm__back:hover {
+    text-decoration: underline;
+}

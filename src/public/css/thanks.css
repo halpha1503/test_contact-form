@@ -1,0 +1,84 @@
+:root {
+    --ink: #8f8275;
+    --btn: #80756b;
+    --watermark: #f7f6f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    color: var(--ink);
+    background: #ffffff;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.thanks {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.thanks::before {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    content: "Thank you";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(120px, 18vw, 220px);
+    letter-spacing: 0.02em;
+    color: var(--watermark);
+    line-height: 1;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.thanks__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.thanks__message {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+}
+
+.thanks__button {
+    font-family: "Inika", serif;
+    width: 140px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: var(--btn);
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+}
+
+.thanks__button:hover {
+    filter: brightness(0.97);
+}
