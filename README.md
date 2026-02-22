@@ -1,8 +1,12 @@
-# test_contact-form
+# 採点者の方へ
+- 作業時間の不足と学習内容の理解不足により、全機能を実装し切ることができませんでした。大変申し訳ございません。次に繋げるため、現在のコーディングの範囲内で改善点等あればご教示いただけますと幸いです。何卒、よろしくお願いいたします。
 
+# test_contact-form
 ## 環境構築手順
 ### 1. Dockerビルド
-- git clone 
+- git clone https://github.com/halpha1503/test_contact-form.git
+- cd test_contact-form
+- docker-compose up -d --build
 
 ### 2. Laravel環境構築
 - docker-compose exec php bash
@@ -24,7 +28,4 @@
 - MySQL 8.4
 - nginx 1.29.5
 
-
-# 採点者の方へ
-- 作業時間の不足と学習内容の理解不足により、全機能を実装し切ることができませんでした。大変申し訳ございません。次に繋げるため、現在のコーディングの範囲内で改善点等あればご教示いただけますと幸いです。何卒、よろしくお願いいたします。
 
